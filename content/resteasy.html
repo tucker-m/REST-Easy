@@ -27,22 +27,7 @@
     </div>
 
     <!-- Page Content -->
-    <div class="container">
-
-      <!-- URL input bar -->
-      <div class="input-group">
-        <div class="input-group-btn">
-          <button id="request-method" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></button>
-        </div>
-        <input type="text" id="url" class="form-control" placeholder="http://">
-        <span class="input-group-btn">
-          <a href="#response-progress" class="btn btn-default" id="send">
-            <span class="glyphicon glyphicon-send"></span>
-            Send
-          </a>
-        </span>
-      </div>
-      <br>
+    <div class="container-fluid">
 
       <div class="row">
         <div class="col-sm-6">
@@ -50,6 +35,20 @@
             <div class="panel-heading">Request</div>
             <div class="panel-body">
 
+              <!-- URL input bar -->
+              <div id="url-box" class="input-group">
+                <div class="input-group-btn">
+                  <button id="request-method" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></button>
+                </div>
+                <input type="text" id="url" class="form-control" placeholder="http://">
+                <span class="input-group-btn">
+                  <a href="#response-progress" class="btn btn-default" id="send">
+                    <span class="glyphicon glyphicon-send"></span>
+                    Send
+                  </a>
+                </span>
+              </div>
+              
               <!-- Request tabs -->
               <ul class="nav nav-tabs">
                 <li class="active"><a href="#request-parameters" data-toggle="tab">Parameters</a></li>

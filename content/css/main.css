@@ -36,3 +36,7 @@ ul.nav.nav-tabs {
 ul.nav.nav-tabs li.active a {
     outline: 0;
 }
+
+#url-box {
+	margin-bottom: 1em;
+}
